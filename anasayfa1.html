@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="photo/icon.jpg" type="image/x-icon" />
+    <style>
+      body,
+      html {
+        overflow-x: hidden;
+        box-sizing: border-box;
+      }
+      .kapsayıcı {
+        background: linear-gradient(
+            rgb(0, 0, 0, 0.8),
+            rgb(0, 0, 0, 0.4),
+            rgb(0, 0, 0, 0.8)
+          ),
+          url(photo/tv11.jpg);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 700px;
+      }
+      .resim2 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-left: 130px;
+        margin-top: 40px;
+        width: 38%;
+        height: 300px;
+      }
+      .resim3 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-left: 150px;
+        margin-top: 30px;
+        width: 28%;
+        height: 400px;
+      }
+      .resim4 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 200%;
+        left: 55%;
+        width: 35%;
+        height: 320px;
+      }
+      .resim5 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-left: 140px;
+        margin-top: 30px;
+        width: 35%;
+        height: 400px;
+      }
+
+      .footera {
+        color: #737373;
+        text-decoration: none;
+      }
+      .footera:hover {
+        color: #737373;
+        text-decoration: underline;
+      }
+      .kapsayıcı > .dilbutton1 {
+        color: white;
+        border-color: white;
+        height: 35px;
+        padding-top: 4px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        top: 4%;
+        left: 78%;
+      }
+      .kapsayıcı > .dilbutton1:hover{
+        color: white;
+      }
+      .accordion-button:focus {
+        box-shadow: 0 0 transparent !important;
+        border: none !important;
+
+        color: white;
+      }
+      .accordion-button {
+        background-color: #303030;
+        color: white;
+        font-weight: 500;
+      }
+      .accordion-body {
+        background-color: #303030;
+        color: white;
+
+        font-weight: 500;
+      }
+      .accordion {
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        top: 200px;
+      }
+
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: #333;
+        overflow: hidden;
+        color: white;
+        margin-top: 2px;
+        margin-bottom: 3px;
+      }
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="kapsayıcı">
+      <div>
+        <img
+          src="photo/netflix_logo.png"
+          alt=""
+          style="margin-top: 20px; height: 70px; margin-left: 40px"
+        />
+      </div>
+      <button type="button" class="btn dilbutton1">
+        <i class="fa-solid fa-globe"></i> Türkçe
+
+        <i class="fa-solid fa-caret-down"></i>
+      </button>
+      <a href="oturumac.html">
+        <button
+          type="button oturumaç"
+          class="btn"
+          style="
+            color: white;
+            background-color: #e50914;
+            height: 35px;
+            padding-top: 4px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: absolute;
+            top: 4%;
+            left: 88%;
+          "
+        >
+          Oturum Aç
+        </button></a
+      >
+      <!--YAZIYA AİT OLAN DİV-->
+      <div class="col-5">
+        <h1
+          style="
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 150px;
+            position: relative;
+            left: 65%;
+          "
+        >
+          <strong> Sınırsız film, dizi ve çok daha fazlası.</strong>
+        </h1>
+        <h4
+          style="
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+            left: 65%;
+          "
+        >
+          İstediğiniz yerde izleyin. İstediğiniz zaman iptal edin
+        </h4>
+        <h5
+          style="
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+            left: 47%;
+            width: 860px;
+          "
+        >
+          İzlemeye hazır mısınız? Üyelik oluşturmak veya üyeliğinize erişmek
+          için e-posta adresinizi girin.
+        </h5>
+        <input
+          type="text"
+          placeholder="E-posta adresi"
+          style="
+            width: 500px;
+            height: 58px;
+            position: relative;
+            left: 67%;
+            margin-top: 15px;
+          "
+        />
+        <!--İNPUT DİVİ-->
+        <div>
+          <button
+            style="
+              background-color: #e50914;
+              color: white;
+              position: absolute;
+              left: 61%;
+              top: 67.7%;
+              width: 160px;
+              height: 64px;
+              font-size: 27px;
+              padding-left: 20px;
+              padding-right: 20px;
+            "
+          >
+            Başlayın
+          </button>
+          <!--İNPUT DİVİ BİTİŞİ-->
+        </div>
+        <!--CLASS COL-5 OLAN DİVİN BİTİŞİ-->
+      </div>
+      <!--KAPSAYICI DİVİN BİTİŞİ-->
+    </div>
+    <!--GRİ BÖLÜM-->
+    <div style="background-color: #333; height: 5px; width: 100%"></div>
+    <!--1.SİYAH BÖLÜM-->
+    <div style="width: 100%; height: 450px; background-color: black">
+      <div class="col-4">
+        <h1
+          style="
+            color: white;
+            padding: 130px;
+            font-size: 50px;
+            padding-left: 145px;
+            padding-top: 80px;
+          "
+        >
+          <b> Televizyonunuzda izleyebilirsiniz.</b>
+        </h1>
+        <h4
+          style="
+            color: white;
+            position: absolute;
+            top: 110%;
+            width: 590px;
+            padding-left: 145px;
+            padding-top: px;
+          "
+        >
+          Akıllı TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+          oynatıcılar ve daha fazlasında seyredin.
+        </h4>
+      </div>
+      <div>
+        <img
+          src="photo/resim2.jpg"
+          alt=""
+          style="position: absolute; top: 90%; left: 45%"
+          class="resim2"
+        />
+      </div>
+    </div>
+    <!--GRİ BÖLÜM-->
+    <div style="background-color: #333; height: 5px; width: 100%"></div>
+    <!--2.SİYAH BÖLÜM-->
+    <div style="width: 100%; height: 450px; background-color: black">
+      <div class="col-8">
+        <h1
+          style="
+            color: white;
+            padding: 130px;
+            font-size: 50px;
+            padding-left: 145px;
+            position: absolute;
+            left: 40%;
+          "
+        >
+          <b> Çevrimdışı izlemek için içerikleri indirin.</b>
+        </h1>
+        <h4
+          style="
+            color: white;
+            position: absolute;
+            top: 170%;
+            width: 620px;
+            padding-left: 145px;
+            padding-top: 10px;
+            position: absolute;
+            left: 40%;
+          "
+        >
+          En sevdiğiniz içerikleri kolayca kaydedin ve her zaman izleyecek bir
+          şeyleriniz olsun.
+        </h4>
+      </div>
+      <div>
+        <img src="photo/tv22.jpg" alt="" class="resim3" />
+      </div>
+    </div>
+    <!--GRİ BÖLÜM-->
+    <div style="background-color: #333; height: 5px; width: 100%"></div>
+
+    <!--3.SİYAH BÖLÜM-->
+    <div style="width: 100%; height: 450px; background-color: black">
+      <div class="col-7">
+        <h1
+          style="
+            color: white;
+            padding: 130px;
+            font-size: 50px;
+            padding-left: 145px;
+            padding-top: 120px;
+          "
+        >
+          <b>İstediğiniz her yerde izleyin.</b>
+        </h1>
+        <h4
+          style="
+            color: white;
+            position: absolute;
+            top: 225%;
+            width: 620px;
+            padding-left: 145px;
+            padding-top: px;
+          "
+        >
+          Ekstra ücret ödemeden telefonda, tablette, bilgisayarda, televizyonda
+          sınırsız film ve dizi izleyin.
+        </h4>
+      </div>
+
+      <div>
+        <img src="photo/resim4.jpg" alt="" class="resim4" />
+      </div>
+    </div>
+    <!--GRİ BÖLÜM-->
+    <div style="background-color: #333; height: 5px; width: 100%"></div>
+    <!--4.SİYAH BÖLÜM-->
+    <div style="width: 100%; height: 450px; background-color: black">
+      <div class="col-8">
+        <h1
+          style="
+            color: white;
+            padding: 130px;
+            font-size: 50px;
+            padding-left: 145px;
+            position: absolute;
+            left: 40%;
+            top: 245%;
+          "
+        >
+          <b> Çocuklarınız için profiller oluşturun.</b>
+        </h1>
+        <h4
+          style="
+            color: white;
+            position: absolute;
+            top: 275%;
+            width: 635px;
+            padding-left: 145px;
+            padding-top: 10px;
+            position: absolute;
+            left: 40%;
+          "
+        >
+          Üyeliğinize dâhil olan bu ücretsiz deneyim sayesinde çocuklarınız,
+          sadece onlara özel bir alanda en sevdikleri karakterlerle maceralara
+          atılabilir.
+        </h4>
+      </div>
+      <div>
+        <img src="photo/tv4.jpg" alt="" class="resim5" />
+      </div>
+    </div>
+    <!--GRİ BÖLÜM-->
+    <div style="background-color: #333; height: 5px; width: 100%"></div>
+    <div style="background-color: black; width: 100%; height: 990px">
+      <!-- Background div başlangıcı -->
+      <!-- Accordion 1  -->
+      <div style="margin-left: 460px; padding-top: 70px;"><h1 style="color: white; font-size: 50px;"><b> Sıkça Sorulan Sorular</b></h1></div>
+      <div
+        style="position: absolute; top: 320%; width: 60%; margin-left: 270px"
+      >
+        <button class="accordion" style="font-size: 30px">
+          Netflix nedir?<span
+          ><i
+            class="fa-solid fa-plus"
+            style="margin-left: 610px; position: absolute; top: 10%"
+          ></i>
+        </button>
+        <div class="panel">
+          <p>
+            Netflix; internet bağlantılı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve daha fazlasını içeren geniş bir arşiv sunan bir streaming hizmetidir.
+          </p>
+        </div>
+
+        <button class="accordion mt-2" style="font-size: 30px">
+          Netflix'in maliyeti nedir?<span
+          ><i
+            class="fa-solid fa-plus"
+            style="margin-left: 470px; position: absolute; top: 44%"
+          ></i>
+        </button>
+        <div class="panel">
+          <p>
+            Netflix'i akıllı telefonunuz, tabletiniz, Akıllı TV'niz, dizüstü bilgisayarınız veya yayın cihazınızda sabit bir aylık ücretle izleyin. Aylık plan ücretleri 45,99 TL ile 93,99 TL arasında değişmektedir. Ekstra maliyet yok, sözleşme yok.
+          </p>
+        </div>
+
+        <button class="accordion mt-2" style="font-size: 30px">
+          Nerede izleyebilirim?<span
+          ><i
+            class="fa-solid fa-plus"
+            style="margin-left: 510px; position: absolute; top: 79%"
+          ></i>
+        </button>
+        <div class="panel">
+          <p>
+            İstediğiniz yerde, istediğiniz zaman izleyin. Bilgisayarınızda netflix.com adresinden veya akıllı TV'ler, akıllı telefonlar, tabletler, medya oynatıcılar ve oyun konsolları dahil Netflix uygulamasını sunan, internet bağlantılı herhangi bir cihazda anında izlemek için Netflix hesabınızla oturum açın.
+          </p>
+        </div>
+      </div>
+
+      <!-- End Accordion 1 -->
+
+      <!--  Accordion 2 -->
+      <div
+        style="position: absolute; top: 351%; width: 60%; margin-left: 270px"
+      >
+        <button class="accordion mt-1" style="font-size: 30px">
+          Nasıl iptal edebilirim?
+          <span
+            ><i class="fa-solid fa-plus" style="margin-left: 490px"></i
+          ></span>
+        </button>
+        <div class="panel">
+          <p>
+            Netflix esnektir. Sinir bozucu hiçbir sözleşme ve taahhüt yoktur. Hesabınızı çevrimiçi olarak iki tıklamayla kolayca iptal edebilirsiniz. İptal ücreti yoktur - hesabınızı istediğiniz zaman başlatın veya durdurun.
+          </p>
+        </div>
+
+        <button class="accordion mt-2" style="font-size: 30px; float: left">
+          Netflix'te ne izleyebilirim?<span
+            ><i
+              class="fa-solid fa-plus"
+              style="margin-left: 450px; position: absolute; top: 44%"
+            ></i
+          ></span>
+        </button>
+        <div class="panel">
+          <p>
+            Netflix, uzun metrajlı filmler, belgeseller, diziler ve programlar, anime, ödüllü Netflix orijinal içerikleri ve daha fazlasından oluşan kapsamlı bir kütüphaneye sahiptir. İstediğiniz her zaman, istediğiniz kadar çok şey izleyin.
+          </p>
+        </div>
+
+        <button class="accordion mt-2" style="font-size: 30px">
+          Netflix çocuklar için uygun mudur?<span
+          ><i
+            class="fa-solid fa-plus"
+            style="margin-left: 334px; position: absolute; top: 80%"
+          ></i>
+        </button>
+        <div class="panel">
+          <p>
+            Üyeliğinize dâhil olan Netflix Çocuk deneyimi, çocukların ailece izlenebilecek dizi ve filmleri kendilerine özel bir alanda izlemelerini sağlarken kontrolü ebeveynlere verir.
+
+          </p>
+        </div>
+      </div>
+      <div class="col-12 text-center" style="position: absolute; top: 390%;">
+        <h5 style="color: white;">İzlemeye hazır mısınız? Üyelik oluşturmak veya üyeliğinize erişmek için e‑posta adresinizi girin.</h5>
+        <br>
+        <input type="text" name="" id="" placeholder="E-posta adresi" style="width: 500px; height: 60px; position: absolute; left: 27%;">
+        <button style="background-color: #e50914; color: white; height: 60px; font-size: 25px;position: absolute; left: 62%; text-align: center; width: 150px;">Başlayın > </button>
+      </div>
+      <!-- End Accordion 2 -->
+      <!-- Background div başlangıcı -->
+    </div>
+
+    <!--GRİ BÖLÜM-->
+    <div style="background-color: #333; height: 5px; width: 100%"></div>
+    <!--FOOTER-->
+    <div
+      style="
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        color: #737373;
+      "
+    >
+      <p style="margin-left: 250px; padding-top: 65px">
+        Sorularınız mı var?
+        <a href="#" class="footera">0850-390-7444</a> numaralı telefonu arayın
+      </p>
+      <div
+        class="col-3"
+        style="margin-left: 250px; line-height: 30px; font-size: 14px"
+      >
+        <a href="#" class="footera">SSS</a> <br />
+        <a href="#" class="footera">Yatırımcı İlişkileri</a> <br />
+        <a href="#" class="footera">Kullanım Koşulları</a> <br />
+        <a href="#" class="footera">Bize Ulaşın</a> <br />
+        <button
+          type="button buton"
+          style="
+            background-color: black;
+            color: #737373;
+            border: 1px solid #333;
+            width: 130px;
+            height: 50px;
+            margin-top: 30px;
+          "
+        >
+          <i class="fa-solid fa-globe"></i>&nbsp&nbsp Türkçe &nbsp &nbsp<i
+            class="fa-solid fa-caret-down"
+          ></i>
+        </button>
+        <p style="color: #737373; padding-top: 30px">Netflix Türkiye</p>
+      </div>
+      <div
+        class="col-3"
+        style="
+          position: absolute;
+          top: 444%;
+          left: 35%;
+          line-height: 30px;
+          font-size: 14px;
+        "
+      >
+        <a href="#" class="footera">Yardım Merkezi</a> <br />
+        <a href="#" class="footera">İş İmkanları</a> <br />
+        <a href="#" class="footera">Gizlilik</a> <br />
+        <a href="#" class="footera">Hız Testi</a> <br />
+      </div>
+      <div
+        class="col-3"
+        style="
+          position: absolute;
+          top: 444%;
+          left: 50%;
+          line-height: 30px;
+          font-size: 14px;
+        "
+      >
+        <a href="#" class="footera">Hesap</a> <br />
+        <a href="#" class="footera">Hediye Kartı Kullan</a> <br />
+        <a href="#" class="footera">Çerez Tercihleri</a> <br />
+        <a href="#" class="footera">Yasal Hükümler</a> <br />
+      </div>
+      <div
+        class="col-3"
+        style="
+          position: absolute;
+          top: 444%;
+          left: 65%;
+          line-height: 30px;
+          font-size: 14px;
+        "
+      >
+        <a href="#" class="footera">Medya Merkezi</a> <br />
+        <a href="#" class="footera">İzleme Yolları</a> <br />
+        <a href="#" class="footera">Kurumsal Bilgiler</a> <br />
+        <a href="#" class="footera">Sadece Netflix'te</a> <br />
+      </div>
+    </div>
+    <!--JAVASCRİPT-->
+    <script
+      src="https://kit.fontawesome.com/f911f5b1d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      src =
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js";
+      integrity =
+        "sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2";
+      crossorigin = "anonymous";
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
